@@ -1,0 +1,505 @@
+<template>
+	<div class="c-home">
+		<div class="slds-grid slds-wrap slds-card slds-p-around_large" style="background-color: #04475b;">
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<div onclick={dashboard} class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="large" class="icon-color" icon-name="standard:dashboard_ea" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							Dashboard</h2>
+					</div>
+				</div>
+			</div>
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<div onclick={attendance} class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="large" class="icon-color" icon-name="utility:user" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							Attendence</h2>
+					</div>
+				</div>
+			</div>
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<div onclick={appointments} class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="large" class="icon-color" icon-name="standard:today" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							Appointments</h2>
+					</div>
+				</div>
+			</div>
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<div onclick={expenses} class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="large" class="icon-color" icon-name="utility:money" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							Expense</h2>
+					</div>
+				</div>
+			</div>
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<div onclick={newlead} class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="large" class="icon-color" icon-name="standard:lead" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							New Lead</h2>
+					</div>
+				</div>
+			</div>
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<a class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="large" class="icon-color" icon-name="custom:custom53" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							Notifications</h2>
+					</a>
+				</div>
+			</div>
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<a href="tel:+4733378901" class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="large" class="icon-color" icon-name="standard:call" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							call</h2>
+					</a>
+				</div>
+			</div>
+			<div class="slds-col slds-p-vertical_x-small slds-size_1-of-2">
+				<div class="sbox slds-m-horizontal_x-small" data-stype="Education">
+					<a class="slds-box slds-box_link slds-box_medium blue-bg"
+						style="padding: 1.5rem;display: flex;flex-direction: column;border-radius: 1.5rem;border: 0;">
+						<span class="slds-icon_container slds-icon-utility-knowledge_base slds-p-around_x-small" style="align-self: center;">
+						<lightning-icon size="medium" class="icon-color" icon-name="action:map" alternative-text="connected_apps" title="connected_apps">
+						</lightning-icon>
+						</span>
+						<h2 class="slds-text-heading_small" title="Share the knowledge" style="align-self: center;color:#fff;">
+							Maps</h2>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="c-dashboard slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-dashboard" style="margin-bottom: 5px;font-size: 0.9rem;">&LT; Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">My Dashboard</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="slds-card slds-p-around_small slds-m-top_small">
+						<div class="slds-text-heading_small" style="">Appointments Assigned</div>
+						<div class="slds-text-title_bold" style="font-size: 1.5rem;">09</div>
+					</div>
+					<div class="slds-card slds-p-around_small slds-m-top_small">
+						<div class="slds-text-heading_small" style="">Appointments Completed</div>
+						<div class="slds-text-title_bold" style="font-size: 1.5rem;">04</div>
+					</div>
+					<div class="slds-card slds-p-around_small slds-m-top_small">
+						<div class="slds-text-heading_small" style="">Appointments In Progress</div>
+						<div class="slds-text-title_bold" style="font-size: 1.5rem;">02</div>
+					</div>
+					<div class="slds-card slds-p-around_small slds-m-top_small">
+						<div class="slds-text-heading_small" style="">Appointments Abandoned</div>
+						<div class="slds-text-title_bold" style="font-size: 1.5rem;">01</div>
+					</div>
+					<div class="slds-card slds-p-around_small slds-m-top_small">
+						<div class="slds-text-heading_small" style="">Leaderboard</div>
+						<div class="slds-text-title_bold" style="font-size: 1.5rem;">#4</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="c-attendance slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-attendance" style="margin-bottom: 5px;font-size: 0.9rem;">&LT; Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">Attendance</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slds-text-heading_small slds-m-top_small">Sumbit your attendence here</div>
+					<a onclick={success} data-source="c-attendance" class="slds-button slds-button_brand slds-m-top_medium"
+						style="background-color: rgb(4, 71, 91);margin-left: auto;margin-right: auto;display: block;">Submit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="c-success slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-success" style="margin-bottom: 5px;font-size: 0.9rem;">&LT; Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">success</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slds-card slds-p-around_large slds-m-top_medium">
+						<div class="slds-p-top_small" style="text-align: center;">
+							<lightning-icon size="medium" icon-name="standard:task2" alternative-text="connected_apps"
+								title="connected_apps">
+							</lightning-icon>
+						</div>
+						<div style="text-align: center;" class="slds-text-heading_medium slds-m-top_small">Submitted successfully!
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="c-appointments slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-appointments" style="margin-bottom: 5px;font-size: 0.9rem;">&LT;
+									Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">Appointments/Visits</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slds-p-top_small">
+						<lightning-tabset variant="scoped" class="tab-active">
+							<lightning-tab label="Open" class="slds-theme_shade">
+
+
+								<div class="slds-card slds-card_boundary c-results">
+									<div class="slds-card__body slds-card__body_inner">
+										<div class="slds-grid slds-wrap">
+											<div class="slds-p-around_x-small">
+												<lightning-icon class="icon-color-user" size="large" icon-name="standard:user"
+													alternative-text="contact" title="contact">
+												</lightning-icon>
+											</div>
+											<div class="slds-p-left_medium" style="align-self: center;">
+												<div class="slds-col slds-p-bottom_xx-small" style="font-size: 1rem;font-weight: 600;">Rahul
+													Prasad</div>
+												<div class="slds-col slds-text-body_small slds-p-top_xx-small">
+													UHD12345678900</div>
+											</div>
+											<div class="slds-p-left_x-small">
+												<button class="slds-button slds-button_brand slds-m-top_x-small" style="background-color: rgb(4, 71, 91);width: auto;">View</button>
+												<button onclick={checkcredit} class="slds-button slds-button_brand slds-m-top_x-small" style="background-color: rgb(4, 71, 91);width: auto;">Check-in</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slds-card slds-card_boundary c-results">
+									<div class="slds-card__body slds-card__body_inner">
+										<div class="slds-grid slds-wrap">
+											<div class="slds-p-around_x-small">
+												<lightning-icon class="icon-color-user" size="large" icon-name="standard:user"
+													alternative-text="contact" title="contact">
+												</lightning-icon>
+											</div>
+											<div class="slds-p-left_medium" style="align-self: center;">
+												<div class="slds-col slds-p-bottom_xx-small" style="font-size: 1rem;font-weight: 600;">Rahul
+													Prasad</div>
+												<div class="slds-col slds-text-body_small slds-p-top_xx-small">
+													UHD12345678900</div>
+											</div>
+											<div class="slds-p-left_x-small">
+												<button class="slds-button slds-button_brand slds-m-top_x-small" style="background-color: rgb(4, 71, 91);width: auto;">View</button>
+												<button onclick={checkcredit} class="slds-button slds-button_brand slds-m-top_x-small" style="background-color: rgb(4, 71, 91);width: auto;">Check-in</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</lightning-tab>
+							<lightning-tab label="Completed" title="2nd tab extended title">
+
+							</lightning-tab>
+						</lightning-tabset>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="c-check-credit slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-check-credit" style="margin-bottom: 5px;font-size: 0.9rem;">&LT;
+									Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">Check Credit</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<lightning-input class="slds-m-top_small slds-m-bottom_small" type="text" label="Enter some text">
+					</lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<a onclick={checkcreditscore} class="slds-button slds-button_brand slds-m-top_medium"
+						style="background-color: rgb(4, 71, 91);margin-left: auto;margin-right: auto;display: block;">Check Credit
+						Score</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="c-check-credit-score slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-check-credit-score" style="margin-bottom: 5px;font-size: 0.9rem;">&LT;
+									Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">Check Credit</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slds-text-heading_small slds-m-top_small">Customer Credit Score</div>
+					<div class="slds-text-title_bold" style="font-size: 1.5rem;">789</div>
+					<fieldset class="slds-form-element">
+						<legend class="slds-form-element__legend slds-form-element__label">Rent to Own</legend>
+						<div class="slds-form-element__control">
+							<span class="slds-radio">
+<input type="radio" id="radio-41" value="radio-41" name="default" checked="" />
+<label class="slds-radio__label" for="radio-41">
+<span class="slds-radio_faux"></span>
+							<span class="slds-form-element__label">Approve</span>
+							</label>
+							</span>
+							<span class="slds-radio">
+<input type="radio" id="radio-42" value="radio-42" name="default" />
+<label class="slds-radio__label" for="radio-42">
+<span class="slds-radio_faux"></span>
+							<span class="slds-form-element__label">Reject</span>
+							</label>
+							</span>
+						</div>
+					</fieldset>
+					<a onclick={feedback} class="slds-button slds-button_brand slds-m-top_medium"
+						style="background-color: rgb(4, 71, 91);margin-left: auto;margin-right: auto;display: block;">Collect
+						Feedback</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="c-feedback slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-feedback" style="margin-bottom: 5px;font-size: 0.9rem;">&LT; Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">Customer Feedback</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slds-p-top_small">
+						<img onclick={emojiActive} data-index="1" class="emoji slds-m-right_x-small" src="https://d5g00000bl88deab-dev-ed--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0685g000003dQXa&operationContext=DELIVERY&contentId=05T5g00000GDPZu&page=0&d=/a/5g000000TaXl/cTmp82wOBe3EcNSjv1VHOSeQeqo4wS7arC.R2lhUll8&oid=00D5g00000Bl88d&dpt=null&viewId=">
+						<img onclick={emojiActive} data-index="2" class="emoji slds-m-right_x-small" src="https://d5g00000bl88deab-dev-ed--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0685g000003dQZU&operationContext=DELIVERY&contentId=05T5g00000GDPdI&page=0&d=/a/5g000000TaY4/H0qEnkxbOkdcV4YPz1NlLL71qh8oDTdECh0YQ8S6vBw&oid=00D5g00000Bl88d&dpt=null&viewId=">
+						<img onclick={emojiActive} data-index="3" class="emoji slds-m-right_x-small" src="https://d5g00000bl88deab-dev-ed--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0685g000003dQZP&operationContext=DELIVERY&contentId=05T5g00000GDPd8&page=0&d=/a/5g000000TaXz/0DCMJyz7NX4ZiG6jcpisztcKa0Z6b5mZW1su2N3aYsQ&oid=00D5g00000Bl88d&dpt=null&viewId=">
+						<img onclick={emojiActive} data-index="4" class="emoji slds-m-right_x-small" src="https://d5g00000bl88deab-dev-ed--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0685g000003dQXZ&operationContext=DELIVERY&contentId=05T5g00000GDPZf&page=0&d=/a/5g000000TaXk/grIE5xySbDXctq1CEBtj8tfHheASKiOvC36wnbFo_Ok&oid=00D5g00000Bl88d&dpt=null&viewId=">
+						<img onclick={emojiActive} data-index="5" class="emoji slds-m-right_x-small" src="https://d5g00000bl88deab-dev-ed--c.documentforce.com/sfc/dist/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0685g000003dQXY&operationContext=DELIVERY&contentId=05T5g00000GDPZa&page=0&d=/a/5g000000TaXf/TbySxDiogKRD9SInYUYIKFqvvB9FNDsiYGNgeUOCvA0&oid=00D5g00000Bl88d&dpt=null&viewId=">
+					</div>
+					<div class="slds-text-heading_small slds-m-top_small slds-m-bottom_x-small">Remarks(If Any)</div>
+					<textarea class="slds-textarea"></textarea>
+					<a onclick={success} data-source="c-feedback" class="slds-button slds-button_brand slds-m-top_medium"
+						style="background-color: rgb(4, 71, 91);margin-left: auto;margin-right: auto;display: block;">Check out</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="c-new-lead slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-new-lead" style="margin-bottom: 5px;font-size: 0.9rem;">&LT; Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">New Lead</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<lightning-input class="slds-m-top_small slds-m-bottom_small" type="text" label="Enter some text">
+					</lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<a onclick={success} data-source="c-new-lead" class="slds-button slds-button_brand slds-m-top_medium"
+						style="background-color: rgb(4, 71, 91);margin-left: auto;margin-right: auto;display: block;">Submit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="c-expenses slds-card slds-hide">
+		<div class="slds-page-header slds-page-header_related-list">
+			<div class="slds-page-header__row">
+				<div class="slds-page-header__col-title">
+					<nav role="navigation" aria-label="Breadcrumbs">
+						<ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+							<li class="slds-breadcrumb__item">
+								<a onclick={home} data-source="c-expenses" style="margin-bottom: 5px;font-size: 0.9rem;">&LT; Home</a>
+							</li>
+						</ol>
+					</nav>
+					<div class="slds-media">
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1>
+										<span class="slds-page-header__title slds-truncate" title="Contacts (will truncate)" style="color: #04475b;font-size: 1.2rem;">Expenses</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<lightning-input class="slds-m-top_small slds-m-bottom_small" type="text" label="Enter some text">
+					</lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<lightning-input class="slds-m-bottom_small" type="text" label="Enter some text"></lightning-input>
+					<a onclick={success} data-source="c-expenses" class="slds-button slds-button_brand slds-m-top_medium"
+						style="background-color: rgb(4, 71, 91);margin-left: auto;margin-right: auto;display: block;">Submit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</template>

@@ -1,0 +1,37 @@
+h1 {
+    color: rgb(0, 112, 210);
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+.app {
+    background-color: #fafaf9;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.icon-color{
+    --sds-c-icon-color-foreground-default: white;
+    --sds-c-icon-color-background: transparent;
+}
+
+.icon-color-user{
+    --sds-c-icon-color-foreground-default: white;
+    --sds-c-icon-color-background: #04475b;
+}
+
+.blue-bg {
+   background-color: #df5022; 
+}
+
+.emoji {
+    height: 40px;
+    width:40px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.emoji.active {
+    opacity: 1;
+}
